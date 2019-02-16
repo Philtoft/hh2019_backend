@@ -1,9 +1,10 @@
 
-require('dotenv').config({ path: 'variables.env' });
+require('dotenv').config({ path: '.env' });
 
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const processMessage = require('./processMessage');
 
 const app = express();
 
